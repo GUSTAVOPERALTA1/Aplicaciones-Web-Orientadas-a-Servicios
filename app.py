@@ -1,9 +1,12 @@
 import web
+import requests
+import json
 
-urls= (
+
+urls = (
     "/","google_books.index.Index"
 )
 
-app= web.application(urls, globals()) #Metodo de libreria web
-if __name__=="__main__":
+app = web.application(urls, globals())
+if __name__ == "__main__":
   app.run()
